@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dress Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, rgb(255, 71, 230), rgb(7, 247, 247));
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding-top: 20px;
+            position: relative;
+        }
+        h1 {
+            color: rgb(255, 38, 0);
+        }
+        h3 {
+            color: dimgrey;
+        }
+        .item {
+            background-color: rgb(220, 133, 20);
+            color: azure;
+            padding: 10px;
+            margin: 10px;
+        }
+        .ram {
+            color: gold;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        .image-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+            gap: 30px;
+            margin: 20px 0;
+        }
+        .image-column {
+            text-align: center;
+        }
+        img {
+            width: 300px;
+            height: 400px;
+        }
+        .search-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .cart-icon {
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div style="background-color:aqua"> 
+            <h1 style="font-size: 100px;"> Marvelous Shoppy</h1>
+            <p style="color: rgb(13, 13, 14);font-size: x-large;"><i>PURCHASE ANYONE</i></p>
+        </div>
+    </center>
+
+    <div class="ram">
+        <a style ="font-size: xx-large; color: antiquewhite;" class="active" href="#home"><i class="fas fa-home"></i> HOME</a>
+        <a style ="font-size: xx-large; color: antiquewhite;" href="ABOUT"><i class="fas fa-info-circle"></i> ABOUT</a>
+        <a style ="font-size: xx-large; color: antiquewhite;" href="CART" class="cart-icon">CART 🛒</a>
+    </div>
+    <center>
+        <h1><b>SEARCH</b></h1>
+    </center>
+    <div class="search-container">
+        <form class="example" action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <div class="image-row">
+        <div class="image-column">
+            <img src="C:\Users\Student\Downloads\cap.jpg" alt="BATMAN TSHIRT">
+            <h3><i>BATMAN T SHIRT</i></h3>
+        </div>
+        <div class="image-column">
+            <img src="C:\Users\Student\Downloads\hellcat-blue-trendy-fff.webp" alt="Varun Fox T-Shirt">
+            <h3><i>VARUN FOX TSHIRT</i></h3>
+        </div>
+        <div class="image-column">
+            <img src="C:\Users\Student\Downloads\blue.webp" alt="Superman T-Shirt">
+            <h3><i>SUPERMAN TSHIRT</i></h3>
+        </div>
+        <div class="image-column">
+            <img src="C:\Users\Student\Downloads\yellow4.webp" alt="Checked Shirt">
+            <h3><i>CHECKED SHIRT</i></h3>
+        </div>
+        <div class="image-column">
+            <img src="C:\Users\Student\Downloads\red.png" alt="WHITE TSHIRT">
+            <h3><i>WHITE TSHIRT</i></h3>
+        </div>
+        <div class="image-column">
+            <img src="C:\Users\Student\Downloads\9e6f0fc50b51b750a545d15bbbf745fc.jpg_720x720q80.jpg" alt="CASUAL TSHIRT">
+            <h3>CASUAL TSHIRT</h3>
+        </div>
+        <div class="image-column">
+            <img src="C:\Users\Student\Downloads\spider.jpg" alt="SPIDERMAN T SHIRT">
+            <h3>SPIDERMAN T SHIRT</h3>
+        </div>
+        <div class="image-column">
+            <img src="C:\Users\Student\Downloads\cool.jpg" alt="BLACK TSHIRT">
+            <h3><i>BLACK TSHIRT</i></h3>
+        </div>
+        <div class="image-column">
+            <img src="C:\Users\Student\Downloads\batman.jpg">
+            <h3><i>BATMAN T SHIRT</i></h3>
+        </div>
+    </div>
+</body>
+</html>
