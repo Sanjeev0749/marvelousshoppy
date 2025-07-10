@@ -29,6 +29,17 @@
             justify-content: space-around;
             padding: 10px;
         }
+        .ram a {
+            font-size: xx-large;
+            color: antiquewhite;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .ram a:hover {
+            background-color: rgba(204, 16, 16, 0.2);
+        }
         .image-row {
             display: grid;
             grid-template-columns: repeat(3, 1fr); /* 3 images per row */
@@ -37,6 +48,11 @@
         }
         .image-column {
             text-align: center;
+            border: 2px solid black;
+            padding: 15px;
+            background-color: lightblue;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         img {
             width: 300px;
@@ -45,6 +61,7 @@
         .search-container {
             text-align: center;
             margin: 20px 0;
+            
         }
         .cart-icon {
             font-size: 24px;
@@ -52,67 +69,98 @@
             text-decoration: none;
             margin-left: 20px;
         }
+        .advertisement {
+            background-color: rgba(245, 18, 18, 0.8);
+            background-image: url('offer.webp');
+            padding: 60px;
+            margin: 20px 0;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .advertisement img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+        .price {
+            color: rgb(0, 128, 0); /* Green color for prices */
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
     </style>
 </head>
 <body>
-    <center>
-        <div style="background-color:aqua"> 
-            <h1 style="font-size: 100px;"> Marvelous Shoppy</h1>
-            <p style="color: rgb(13, 13, 14);font-size: x-large;"><i>PURCHASE ANYONE</i></p>
-        </div>
-    </center>
-
     <div class="ram">
-        <a style ="font-size: xx-large; color: antiquewhite;" class="active" href="#home"><i class="fas fa-home"></i> HOME</a>
-        <a style ="font-size: xx-large; color: antiquewhite;" href="ABOUT"><i class="fas fa-info-circle"></i> ABOUT</a>
-        <a style ="font-size: xx-large; color: antiquewhite;" href="CART" class="cart-icon">CART 🛒</a>
+        <a class="active" href="#home"><i class="fas fa-home"></i> HOME</a>
+        <a href="ABOUT"><i class="fas fa-info-circle"></i> ABOUT</a>
+        <a href="CART" class="cart-icon">CART 🛒</a>
+        <a href="LOGIN" style="background-color: #007bff; color: white;"><i class="fas fa-user"></i> LOGIN</a>
     </div>
-    <center>
-        <h1><b>SEARCH</b></h1>
-    </center>
-    <div class="search-container">
+
+    <div class="search-container ">
         <form class="example" action="/action_page.php">
             <input type="text" placeholder="Search.." name="search">
             <button type="submit">Search</button>
         </form>
     </div>
 
+    <center>
+        <div style="background-image: url(shop.webp); margin-bottom: 50px;"> 
+            <h1 style="font-size: 100px;"> Marvelous Shoppy</h1>
+            <p style="color: rgb(13, 13, 14);font-size: x-large;"><i>PURCHASE ANYONE</i></p>
+        </div>
+    </center>
+
+    <div class="advertisement">
+        <h1>Special Offer!</h1>
+        <h2>Get 20% off on your first purchase! Use code: <strong>WELCOME20</strong></h2>
+    </div>
+
     <div class="image-row">
         <div class="image-column">
-            <img src="cap.jpg" alt="BATMAN TSHIRT">
+            <img src="C:\Users\Student\Downloads\cap.jpg" alt="BATMAN TSHIRT">
             <h3><i>BATMAN T SHIRT</i></h3>
+            <p class="price">RS: 300</p>
         </div>
         <div class="image-column">
-            <img src="hellcat-blue-trendy-fff.webp" alt="Varun Fox T-Shirt">
+            <img src="C:\Users\Student\Downloads\hellcat-blue-trendy-fff.webp" alt="Varun Fox T-Shirt">
             <h3><i>VARUN FOX TSHIRT</i></h3>
+            <p class="price">RS: 350</p>
         </div>
         <div class="image-column">
-            <img src="blue.webp" alt="Superman T-Shirt">
+            <img src="C:\Users\Student\Downloads\blue.webp" alt="Superman T-Shirt">
             <h3><i>SUPERMAN TSHIRT</i></h3>
+            <p class="price">RS: 400</p>
         </div>
         <div class="image-column">
-            <img src="yellow4.webp" alt="Checked Shirt">
+            <img src="C:\Users\Student\Downloads\yellow4.webp" alt="Checked Shirt">
             <h3><i>CHECKED SHIRT</i></h3>
+            <p class="price">RS: 450</p>
         </div>
         <div class="image-column">
-            <img src="red.png" alt="WHITE TSHIRT">
+            <img src="C:\Users\Student\Downloads\red.png" alt="WHITE TSHIRT">
             <h3><i>WHITE TSHIRT</i></h3>
+            <p class="price">RS: 250</p>
         </div>
         <div class="image-column">
-            <img src="9e6f0fc50b51b750a545d15bbbf745fc.jpg_720x720q80.jpg" alt="CASUAL TSHIRT">
+            <img src="C:\Users\Student\Downloads\9e6f0fc50b51b750a545d15bbbf745fc.jpg_720x720q80.jpg" alt="CASUAL TSHIRT">
             <h3>CASUAL TSHIRT</h3>
+            <p class="price">RS: 300</p>
         </div>
         <div class="image-column">
-            <img src="spider.jpg" alt="SPIDERMAN T SHIRT">
+            <img src="C:\Users\Student\Downloads\spider.jpg" alt="SPIDERMAN T SHIRT">
             <h3>SPIDERMAN T SHIRT</h3>
+            <p class="price">RS: 350</p>
         </div>
         <div class="image-column">
-            <img src="cool.jpg" alt="BLACK TSHIRT">
+            <img src="C:\Users\Student\Downloads\cool.jpg" alt="BLACK TSHIRT">
             <h3><i>BLACK TSHIRT</i></h3>
+            <p class="price">RS: 300</p>
         </div>
         <div class="image-column">
-            <img src="batman.jpg">
+            <img src="C:\Users\Student\Downloads\batman.jpg" alt="BATMAN T SHIRT">
             <h3><i>BATMAN T SHIRT</i></h3>
+            <p class="price">RS: 250</p>
         </div>
     </div>
 </body>
